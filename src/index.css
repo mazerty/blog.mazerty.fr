@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 400;
+        src: url("@fontsource/ubuntu/files/ubuntu-latin-400-normal.woff2") format("woff2");
+    }
+    @font-face {
+        font-family: "Special Elite";
+        font-style: normal;
+        font-weight: 400;
+        src: url("@fontsource/special-elite/files/special-elite-latin-400-normal.woff2") format("woff2");
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 4rem; /* makes the scrolling work with the 4rem tall fixed navbar */
+    }
+}
